@@ -13,4 +13,9 @@ public class FizzBuzzTest {
         assertEquals(1, fizzBuzz.get(1));
     }
 
+    @Test
+    void test2() {
+        assertEquals(2, fizzBuzz.get(2));
+    }
+
 }
