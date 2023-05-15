@@ -9,6 +9,10 @@ public class FizzBuzz {
             return FIZZ;
         }
 
+        if (position % 5 == 0) {
+            return "buzz";
+        }
+
         return Integer.toString(position);
     }
 
