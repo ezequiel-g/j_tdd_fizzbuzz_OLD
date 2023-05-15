@@ -26,18 +26,4 @@ public class FizzBuzzTest {
         assertEquals(expected, fizzBuzz.get(input));
     }
 
-    @Test
-    void test1() {
-        final int input = 1;
-        final String expected = "1";
-        testParametrized(input, expected);
-    }
-
-    @Test
-    void test2() {
-        final int input = 2;
-        final String expected = "2";
-        testParametrized(input, expected);
-    }
-
 }
