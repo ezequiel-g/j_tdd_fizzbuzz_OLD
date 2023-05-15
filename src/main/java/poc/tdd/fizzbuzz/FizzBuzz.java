@@ -3,6 +3,7 @@ package poc.tdd.fizzbuzz;
 public class FizzBuzz {
 
     public static final String FIZZ = "fizz";
+    public static final String BUZZ = "buzz";
 
     public String get(final int position) {
         if (position % 3 == 0) {
@@ -10,7 +11,7 @@ public class FizzBuzz {
         }
 
         if (position % 5 == 0) {
-            return "buzz";
+            return BUZZ;
         }
 
         return Integer.toString(position);
