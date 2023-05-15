@@ -1,8 +1,8 @@
 package poc.tdd.fizzbuzz;
 
 public class FizzBuzz {
-    public int get(final int position) {
-        return position;
+    public String get(final int position) {
+        return Integer.toString(position);
     }
 
 }
