@@ -6,9 +6,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
 
+    private final FizzBuzz fizzBuzz = new FizzBuzz();
+
     @Test
     void test1() {
-        assertEquals(1, new FizzBuzz().get(1));
+        assertEquals(1, fizzBuzz.get(1));
     }
 
 }
