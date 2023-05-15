@@ -11,13 +11,15 @@ public class FizzBuzzTest {
     @Test
     void test1() {
         final int input = 1;
-        assertEquals(1, fizzBuzz.get(input));
+        final int expected = 1;
+        assertEquals(expected, fizzBuzz.get(input));
     }
 
     @Test
     void test2() {
         final int input = 2;
-        assertEquals(2, fizzBuzz.get(input));
+        final int expected = 2;
+        assertEquals(expected, fizzBuzz.get(input));
     }
 
 }
