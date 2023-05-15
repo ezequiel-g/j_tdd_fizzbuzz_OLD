@@ -8,18 +8,22 @@ public class FizzBuzzTest {
 
     private final FizzBuzz fizzBuzz = new FizzBuzz();
 
+    private void testParametrized(final int input, final String expected) {
+        assertEquals(expected, fizzBuzz.get(input));
+    }
+
     @Test
     void test1() {
         final int input = 1;
         final String expected = "1";
-        assertEquals(expected, fizzBuzz.get(input));
+        testParametrized(input, expected);
     }
 
     @Test
     void test2() {
         final int input = 2;
         final String expected = "2";
-        assertEquals(expected, fizzBuzz.get(input));
+        testParametrized(input, expected);
     }
 
 }
