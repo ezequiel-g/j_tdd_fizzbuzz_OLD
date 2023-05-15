@@ -15,6 +15,7 @@ public class FizzBuzzTest {
 
     private static Stream<Arguments> arguments() {
         return Stream.of(
+                Arguments.of(5, "buzz"),
                 Arguments.of(3, FizzBuzz.FIZZ),
                 Arguments.of(2, "2"),
                 Arguments.of(1, "1")
