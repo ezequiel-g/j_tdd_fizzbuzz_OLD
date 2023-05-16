@@ -23,8 +23,8 @@ public class FizzBuzz {
         return Integer.toString(position);
     }
 
-    private static boolean hasRemainder(final int position, final int fizzValue) {
-        return position % fizzValue == 0;
+    private static boolean hasRemainder(final int position, final int divisor) {
+        return position % divisor == 0;
     }
 
 }
