@@ -9,15 +9,12 @@ public class FizzBuzz {
 
         final boolean isFizz = position % 3 == 0;
         final boolean isBuzz = position % 5 == 0;
+
         if (isFizz && isBuzz) {
             return FIZZ + BUZZ;
-        }
-
-        if (isFizz) {
+        } else if (isFizz) {
             return FIZZ;
-        }
-
-        if (isBuzz) {
+        } else if (isBuzz) {
             return BUZZ;
         }
 
