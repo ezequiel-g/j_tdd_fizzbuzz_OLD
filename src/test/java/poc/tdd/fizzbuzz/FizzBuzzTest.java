@@ -15,9 +15,9 @@ public class FizzBuzzTest {
 
     private static Stream<Arguments> arguments() {
         return Stream.of(
-                Arguments.of(5 * 3, FizzBuzz.FIZZ + FizzBuzz.BUZZ),
-                Arguments.of(5, FizzBuzz.BUZZ),
-                Arguments.of(3, FizzBuzz.FIZZ),
+                Arguments.of(FizzBuzz.FIZZ_VALUE * FizzBuzz.BUZZ_VALUE, FizzBuzz.FIZZ + FizzBuzz.BUZZ),
+                Arguments.of(FizzBuzz.BUZZ_VALUE, FizzBuzz.BUZZ),
+                Arguments.of(FizzBuzz.FIZZ_VALUE, FizzBuzz.FIZZ),
                 Arguments.of(2, "2"),
                 Arguments.of(1, "1")
         );
