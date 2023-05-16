@@ -9,8 +9,10 @@ public class FizzBuzz {
 
     public String get(final int position) {
 
-        final boolean isFizz = position % FIZZ_VALUE == 0;
-        final boolean isBuzz = position % BUZZ_VALUE == 0;
+        final int fizzValue = FIZZ_VALUE;
+        final boolean isFizz = position % fizzValue == 0;
+        final int buzzValue = BUZZ_VALUE;
+        final boolean isBuzz = position % buzzValue == 0;
 
         if (isFizz && isBuzz) {
             return FIZZ + BUZZ;
