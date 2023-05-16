@@ -26,7 +26,10 @@ https://en.wikipedia.org/wiki/Fizz_buzz
     ~~~
     values between position1 <pos1> and position2 <pos2> are: <value1>, <value2>, ... 
     ~~~
-4. If input is "all" <position>, print all the values until that position
+4. If the input are "all" <position>, print all the values until that position
     ~~~
     values up to position '<pos>' are: <value1>, <value2>, ...
     ~~~
+5. **BONUS**: Can you make the program flexible?
+   If the input are "all" <change> <divisor1> <String1> <divisor2> <String2> <divisor3> <String3>...,
+   divisorN are prime numbers > 5, Strings are all different. Can you print the values until all new values are shown?
