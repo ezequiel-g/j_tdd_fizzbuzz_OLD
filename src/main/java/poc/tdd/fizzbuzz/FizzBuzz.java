@@ -7,15 +7,17 @@ public class FizzBuzz {
 
     public String get(final int position) {
 
-        if (position % 3 == 0 && position % 5 == 0) {
+        final boolean isFizz = position % 3 == 0;
+        final boolean isBuzz = position % 5 == 0;
+        if (isFizz && isBuzz) {
             return FIZZ + BUZZ;
         }
 
-        if (position % 3 == 0) {
+        if (isFizz) {
             return FIZZ;
         }
 
-        if (position % 5 == 0) {
+        if (isBuzz) {
             return BUZZ;
         }
 
