@@ -10,9 +10,9 @@ public class FizzBuzz {
     public String get(final int position) {
 
         int fizzValue = FIZZ_VALUE;
-        final boolean isFizz = position % fizzValue == 0;
+        final boolean isFizz = hasRemainder(position, fizzValue);
         fizzValue = BUZZ_VALUE;
-        final boolean isBuzz = position % fizzValue == 0;
+        final boolean isBuzz = hasRemainder(position, fizzValue);
 
         if (isFizz && isBuzz) {
             return FIZZ + BUZZ;
@@ -23,6 +23,10 @@ public class FizzBuzz {
         }
 
         return Integer.toString(position);
+    }
+
+    private static boolean hasRemainder(final int position, final int fizzValue) {
+        return position % fizzValue == 0;
     }
 
 }
