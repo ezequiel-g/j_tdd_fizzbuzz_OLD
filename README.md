@@ -1,35 +1,35 @@
-# FIZZ BUZZ solved using TDD
-Solve Fizz buzz problem using tdd.
+# TDD practice
+Solve the problem using:
+* Test Driven Development (TDD)
+* Design patterns
+* Refactoring technics
 
-## TDD (Test Driven Development)
-https://en.wikipedia.org/wiki/Test-driven_development
+Your solution should be:
+* Well-designed
+* easy and safe to change
+* clean code without code smells nor anti-patterns
+* it is fine to over-engineering a little bit for practice propose.
 
-*Summary*
-1. Add a test
-2. Run all tests. The new test should fail for expected reasons
-3. Write the simplest code that passes the new test
-4. All tests should now pass
-5. Refactor as needed, using tests after each refactor to ensure that functionality is preserved
-6. Repeat
+You can find definitions and links here: [TDD info](/TDD_INFO.md)
 
-## The Problem
+# The Problem
 https://en.wikipedia.org/wiki/Fizz_buzz
 
-*Tasks*
-1. Use TDD process create an application that solve the problem.
-   **NOTE:** USE THE REFACTOR STEPS TO IMPROVE YOU APPLICATION DESIGN.
-2. If the input is a single position, print the corresponding value.
-    ~~~
-    value at position '<pos>' is: <value>
-    ~~~
-3. If the inputs are 2 positions, print the corresponding values between those position (including them)
-    ~~~
-    values between position1 <pos1> and position2 <pos2> are: <value1>, <value2>, ... 
-    ~~~
-4. If the input are "all" <position>, print all the values until that position
-    ~~~
-    values up to position '<pos>' are: <value1>, <value2>, ...
-    ~~~
-5. **BONUS**: Can you make the program flexible?
-   If the input are "all" <change> <divisor1> <String1> <divisor2> <String2> <divisor3> <String3>...,
-   divisorN are prime numbers > 5, Strings are all different. Can you print the values until all new values are shown?
+**IMPORTANT!!!** use the refactor phase to improve your application design.
+
+[find suggested steps on TDD_ROUND_STEPS.MD file](/TDD_STEPS.md)
+
+## Requirements
+Create an application which allows the user to:
+1. Request FizzBuzz value for a given position.
+2. Request FizzBuzz values between 2 positions.
+3. Request FizzBuzz values up to one position.
+
+## Bonus
+Is your application well-designed and easy to change?
+If so, can you make the program flexible?
+
+Allow the user to provide numbers and strings which replace default values and numbers.
+* numbers should be primitives greater than 2, should not allow duplicated numbers.
+* strings cannot be "fizz" "buzz", nor be duplicated strings.
+* default behavior should remain available.
